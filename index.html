@@ -1,0 +1,74 @@
+<!-- Crear una web que sirva para organizarte con la cursada de este cuatrimestre.   
+¿Qué debe incluir? Cinco páginas (5) páginas HTML:   
+
+La primera será el “Home” y debe tener una tabla con la información sobre las materias que estás cursando (nombre, horario, día, etc.);  
+
+la segunda será “Avisos” y debe tener una lista desordenada de tareas pendientes para cada una de las materias;  
+
+la tercera será “Sobre mi” y debe tener información sobre ustedes (nombre completo, carrera, una imagen de perfil, entre otros datos de relevancia),
+
+la cuarta será "Materias 2025" y debe contener una lista de materias. Crear un enlace a la página de la materia Diseño y desarrollo Web
+y la quinta será “Contacto”, donde se tendrá que crear la estructura de un formulario para que alguien pueda contactarse con usted.   -->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Organizador de cursada</title>
+    </head>
+    <body>
+        <header>
+            <h1>Home</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./avisos.html">Avisos</a></li>
+                    <li><a href="./sobre-mi.html">Sobre mi</a></li>
+                    <li><a href="./materias-2025.html">Materias 2025</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Materias del Primer Cuatrimestre 2025</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arquitectura de Computadores</td>
+                        <td>Lunes</td>
+                        <td>18:30 a 20:30</td>
+                    </tr>
+                    <tr>
+                        <td>Sistemas de información I</td>
+                        <td>Martes</td>
+                        <td>18:30 a 20:30</td>
+                    </tr>
+                    <tr>
+                        <td>Introducción a la Algoritmia</td>
+                        <td>Miércoles</td>
+                        <td>18:30 a 20:30</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Jueves</td>
+                        <td>18:30 a 20:30</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño y Desarrollo Web</td>
+                        <td>Viernes</td>
+                        <td>18:30 a 20:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer></footer>
+    </body>
+</html>
