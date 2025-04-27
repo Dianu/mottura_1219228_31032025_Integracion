@@ -40,6 +40,7 @@ h6 {
 
 p {
     margin-bottom: var(--padding-general);
+    text-align: justify;
 }
 
 header {
@@ -103,6 +104,13 @@ header {
 
 main {
     padding: var(--padding-general);
+    margin: 0 auto;
+
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 
     /* Para que el footer siempre quede al final */
     flex: 1;
@@ -110,7 +118,11 @@ main {
 
 .main-dydw {
     padding: 0;
+    margin: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 2rem;
 
     section {
@@ -128,7 +140,7 @@ main {
 }
 
 .aside-dydw {
-    width: 40%;
+    width: 50%;
 }
 
 .tabla-materias {
@@ -172,7 +184,7 @@ main {
 
 /* Estilos para el formulario */
 form {
-    max-width: 500px;
+    width: 500px;
     margin: 2rem auto;
     padding: 2rem;
     background-color: #f8f8f8;
