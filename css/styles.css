@@ -2,31 +2,32 @@
 
 /* Definición de variables */
 :root {
-    --padding-general: 1.25rem;
-    --text-color: #efecec;
-    --title-color: #f7a700;
+  --padding-general: 1.25rem;
+  --text-color: #efecec;
+  --title-color: #f7a700;
 }
 
 /* normalize.css */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
 
-    /* Para que el footer siempre quede al final */
-    display: flex;
-    flex-direction: column;
-    min-height: 100dvh;
+  /* Para que el footer siempre quede al final */
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 h2,
@@ -34,240 +35,240 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--title-color);
-    margin-bottom: var(--padding-general);
+  color: var(--title-color);
+  margin-bottom: var(--padding-general);
 }
 
 p {
-    margin-bottom: var(--padding-general);
-    text-align: justify;
+  margin-bottom: var(--padding-general);
+  text-align: justify;
 }
 
 header {
-    padding: var(--padding-general);
+  padding: var(--padding-general);
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
 
-    background-color: #0707c6;
-    color: var(--text-color);
+  background-color: #0707c6;
+  color: var(--text-color);
 
-    h1 {
-        margin-top: var(--padding-general);
-    }
+  h1 {
+    margin-top: var(--padding-general);
+  }
 }
 
 .header-dydw {
-    justify-content: center;
+  justify-content: center;
 
-    h1 {
-        margin: 0;
-    }
+  h1 {
+    margin: 0;
+  }
 }
 
 .navbar {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 
-    a {
-        color: var(--text-color);
-    }
+  a {
+    color: var(--text-color);
+  }
 }
 
 .navbar-dydw {
-    width: 100%;
-    background-color: var(--text-color);
-    padding: var(--padding-general);
+  width: 100%;
+  background-color: var(--text-color);
+  padding: var(--padding-general);
 
-    a {
-        color: rgb(7, 7, 198);
-    }
+  a {
+    color: rgb(7, 7, 198);
+  }
 }
 
 .navbar ul,
 .navbar-dydw ul {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 
-    a {
-        font-weight: 600;
-        transition: font-weight 0.3s ease-out, text-decoration 0.3s ease-out;
-    }
+  a {
+    font-weight: 600;
+    transition: font-weight 0.3s ease-out, text-decoration 0.3s ease-out;
+  }
 
-    a:hover {
-        font-weight: 700;
-        text-decoration: underline;
-    }
+  a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+  }
 }
 
 main {
-    padding: var(--padding-general);
-    margin: 0 auto;
+  padding: var(--padding-general);
+  margin: 0 auto;
 
-    max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    /* Para que el footer siempre quede al final */
-    flex: 1;
-}
-
-.main-dydw {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 2rem;
-
-    section {
-        padding: var(--padding-general);
-
-        /* Pseudoclase con condición: aplica un estilo a todos elementos del tipo seleccionado menos al primero que aparezca */
-        ul li:not(:first-of-type) h3 {
-            margin-top: 2rem;
-        }
-
-        ul li:not(:first-of-type) {
-            margin-top: 0.7rem;
-        }
-    }
-}
-
-.aside-dydw {
-    width: 50%;
+  /* Para que el footer siempre quede al final */
+  flex: 1;
 }
 
 .tabla-materias {
-    width: 100%;
-    max-width: 700px;
-    margin-top: var(--padding-general);
+  width: 100%;
+  max-width: 700px;
+  margin-top: var(--padding-general);
 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 
-    * {
-        padding: 0.5rem;
-        text-align: center;
-    }
+  * {
+    padding: 0.5rem;
+    text-align: center;
+  }
 }
 
 .section-avisos {
-    h3 {
-        margin-top: var(--padding-general);
-        margin-bottom: 0.5rem;
-    }
+  h3 {
+    margin-top: var(--padding-general);
+    margin-bottom: 0.5rem;
+  }
 }
 
 .section-materias {
-    padding: var(--padding-general);
-    li {
-        margin-bottom: var(--padding-general);
-    }
+  padding: var(--padding-general);
+  li {
+    margin-bottom: var(--padding-general);
+  }
 }
 
 .info-perfil {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    margin-bottom: var(--padding-general);
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: var(--padding-general);
 
-    img {
-        border-radius: 100%;
-        width: 150px;
-    }
+  img {
+    border-radius: 100%;
+    width: 150px;
+  }
 }
 
 /* Estilos para el formulario */
 form {
-    width: 500px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 fieldset {
-    border: none;
+  border: none;
 }
 
 legend {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--title-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--title-color);
 }
 
 label {
-    display: block;
-    margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
-    color: #555;
-    font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 1rem;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-top: 0.3rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-family: inherit;
-    background-color: #fff;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 textarea {
-    resize: vertical;
-    min-height: 7.5rem;
+  resize: vertical;
+  min-height: 7.5rem;
 }
 
 input[type="submit"] {
-    margin-top: 2rem;
-    background-color: #5c6bc0;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
+  margin-top: 2rem;
+  background-color: #5c6bc0;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
 
-    /* Animación para el botón que se activa al cambiar el estado del elemento (con hover) */
-    transition: background-color 0.3s ease;
+  /* Animación para el botón que se activa al cambiar el estado del elemento (con hover) */
+  transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #3949ab;
+  background-color: #3949ab;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: var(--padding-general);
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: var(--padding-general);
 }
 
 @media (max-width: 768px) {
-    .main-dydw {
-        flex-direction: column;
-        gap: 0;
-    }
+  .main-dydw {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    nav ul {
-        flex-wrap: wrap;
-        gap: 0.8rem;
-    }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
 
-    .aside-dydw {
-        width: 100%;
+  .aside-dydw {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+    /* max-width: 100%; */
+    /* min-width: 100%; */
+    /* padding: 1.5rem; */
+  }
+}
+
+@media (max-width: 480px) {
+  .tabla-materias {
+    font-size: x-small;
+
+    * {
+      padding: 0.3rem;
     }
+  }
+
+  .info-perfil {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+  }
 }
