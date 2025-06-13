@@ -1,16 +1,27 @@
-const toggle = document.querySelector('.toggle-switch input[type="checkbox"]');
-toggle.addEventListener("change", function () {
-  document.body.classList.toggle("dark", this.checked);
-});
+const themeToggle = document.getElementById("theme-toggle");
+const iconMoon = document.getElementById("icon-moon");
+const iconSun = document.getElementById("icon-sun");
+const body = document.body;
 
-// Guardar preferencia
-toggle.addEventListener("change", function () {
-  document.body.classList.toggle("dark", this.checked);
-  localStorage.setItem("theme", this.checked ? "dark" : "light");
-});
-
-// Al cargar la página, aplicar preferencia
-if (localStorage.getItem("theme") === "dark") {
-  document.body.classList.add("dark");
-  toggle.checked = true;
+// Función para actualizar los íconos
+function updateIcons(isDark) {
+  iconMoon.style.display = isDark ? "none" : "block";
+  iconSun.style.display = isDark ? "block" : "none";
 }
+
+// Leer preferencia guardada
+const darkMode = localStorage.getItem("darkMode") === "enabled";
+
+if (darkMode) {
+  body.classList.add("dark-mode");
+  updateIcons(true);
+} else {
+  updateIcons(false);
+}
+
+// Evento de toggle
+themeToggle.addEventListener("click", () => {
+  const isDark = body.classList.toggle("dark-mode");
+  updateIcons(isDark);
+  localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
+});
