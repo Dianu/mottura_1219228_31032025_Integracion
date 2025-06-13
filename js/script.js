@@ -25,3 +25,5 @@ themeToggle.addEventListener("click", () => {
   updateIcons(isDark);
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 });
+
+console.log("JS actualizado.");
