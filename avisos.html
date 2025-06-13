@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Organizador de cursada</title>
-        <link rel="stylesheet" href="./css/styles.css" />
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./avisos.html">Avisos</a></li>
-                    <li><a href="./sobre-mi.html">Sobre mi</a></li>
-                    <li><a href="./materias-2025.html">Materias 2025</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <h1>Avisos</h1>
-        </header>
-        <main>
-            <section class="section-avisos">
-                <h2>Tareas pendientes</h2>
-                <ul>
-                    <li>
-                        <h3>Arquitectura de Computadores</h3>
-                        <ul>
-                            <li>Ejercicio individual: Cálculo de variables eléctricas. Sin entrega.</li>
-                            <li>Revisar el material de la UVA 2.</li>
-                            <li>Ejercicio individual: Historia de los microprocesadores.</li>
-                            <li>Participar en el foro a partir del video "La peor pesadilla de Intel.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Sistemas de Información I</h3>
-                        <ul>
-                            <li>Entregar primera parte del TP Integrador. Fecha de entrega: 01/04</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Introducción a la Algoritmia</h3>
-                        <ul>
-                            <li>Completar la lista de ejercicios de python que indicó el profesor. Sin entrega.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Marketing</h3>
-                        <ul>
-                            <li>Participar en el foro a partir del artículo "Nike, reina del deporte". Fecha de entrega: 31/03</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Diseño y Desarrollo Web</h3>
-                        <ul>
-                            <li>Entregar ejercicio individual: HTML - Etiquetas</li>
-                            <li>Entregar ejercicio integrador (obligatorio)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <span>&copy Diana Mottura - Diseño y Desarrollo Web - UADE - 2025</span>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizador de cursada</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./avisos.html">Avisos</a></li>
+          <li><a href="./sobre-mi.html">Sobre mi</a></li>
+          <li><a href="./materias-2025.html">Materias 2025</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Cambiar modo oscuro">
+          <span id="icon-moon" style="display: block">🌙</span>
+          <span id="icon-sun" style="display: none">☀️</span>
+        </button>
+      </nav>
+      <h1>Avisos</h1>
+    </header>
+    <main>
+      <section class="section-avisos">
+        <h2>Tareas pendientes</h2>
+        <ul>
+          <li>
+            <h3>Arquitectura de Computadores</h3>
+            <ul>
+              <li>
+                Ejercicio individual: Cálculo de variables eléctricas. Sin
+                entrega.
+              </li>
+              <li>Revisar el material de la UVA 2.</li>
+              <li>Ejercicio individual: Historia de los microprocesadores.</li>
+              <li>
+                Participar en el foro a partir del video "La peor pesadilla de
+                Intel.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Sistemas de Información I</h3>
+            <ul>
+              <li>
+                Entregar primera parte del TP Integrador. Fecha de entrega:
+                01/04
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Introducción a la Algoritmia</h3>
+            <ul>
+              <li>
+                Completar la lista de ejercicios de python que indicó el
+                profesor. Sin entrega.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Marketing</h3>
+            <ul>
+              <li>
+                Participar en el foro a partir del artículo "Nike, reina del
+                deporte". Fecha de entrega: 31/03
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Diseño y Desarrollo Web</h3>
+            <ul>
+              <li>Entregar ejercicio individual: HTML - Etiquetas</li>
+              <li>Entregar ejercicio integrador (obligatorio)</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <span>&copy Diana Mottura - Diseño y Desarrollo Web - UADE - 2025</span>
+    </footer>
+  </body>
 </html>
