@@ -30,6 +30,27 @@ body {
   min-height: 100dvh;
 }
 
+body.dark-mode {
+  background: #222;
+  color: #f1f1f1;
+
+  a {
+    color: #f1f1f1;
+  }
+
+  .actividades-UVAs {
+    h4,
+    a {
+      color: #f1f1f1;
+    }
+
+    > li {
+      background-color: #333;
+      color: #f1f1f1;
+    }
+  }
+}
+
 h2,
 h3,
 h4,
@@ -77,8 +98,12 @@ a {
 }
 
 .navbar-dydw {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+
   width: 100%;
-  background-color: var(--text-color);
+  /* background-color: var(--text-color); */
   padding: var(--padding-general);
 
   a {
@@ -101,6 +126,26 @@ a {
     font-weight: 700;
     text-decoration: underline;
   }
+}
+
+#theme-toggle span {
+  pointer-events: none;
+}
+
+#theme-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: #111168;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
 }
 
 main {
@@ -182,15 +227,7 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .tabla-materias {
-    font-size: x-small;
-
-    * {
-      padding: 0.3rem;
-    }
-  }
-
-  .info-perfil {
+  .navbar-dydw {
     flex-direction: column;
     align-items: center;
   }

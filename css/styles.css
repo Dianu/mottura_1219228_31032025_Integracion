@@ -93,7 +93,6 @@ header {
   /* max-width: 700px; */
   display: flex;
   justify-content: space-between;
-  /* border: 3px solid red; */
 
   a {
     color: var(--text-color);
@@ -270,6 +269,17 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #3949ab;
+}
+
+.link-externo {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: #f7a700;
+  }
 }
 
 footer {
