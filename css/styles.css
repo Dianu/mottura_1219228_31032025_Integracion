@@ -25,7 +25,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
-  transition: background 0.3s, color 0.3s;
+  /* transition: background 0.3s, color 0.3s; */
 
   /* Para que el footer siempre quede al final */
   display: flex;
@@ -137,9 +137,6 @@ header {
 }
 
 #theme-toggle {
-  /* position: fixed; */
-  /* top: 16px;
-  right: 16px; */
   width: 48px;
   height: 48px;
   border: none;
@@ -153,7 +150,6 @@ header {
   font-size: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: background 0.3s;
-  /* z-index: 1000; */
 }
 
 main {
@@ -219,8 +215,6 @@ form {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
-  transition: background 0.3s, color 0.3s;
 }
 
 fieldset {
@@ -271,7 +265,6 @@ input[type="submit"] {
   font-size: 1rem;
   cursor: pointer;
 
-  /* Animación para el botón que se activa al cambiar el estado del elemento (con hover) */
   transition: background-color 0.3s ease;
 }
 
@@ -303,9 +296,6 @@ footer {
 
   form {
     width: 90%;
-    /* max-width: 100%; */
-    /* min-width: 100%; */
-    /* padding: 1.5rem; */
   }
 }
 

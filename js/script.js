@@ -1,3 +1,4 @@
+// Se obtienen elementos del DOM
 const themeToggle = document.getElementById("theme-toggle");
 const iconMoon = document.getElementById("icon-moon");
 const iconSun = document.getElementById("icon-sun");
@@ -25,5 +26,3 @@ themeToggle.addEventListener("click", () => {
   updateIcons(isDark);
   localStorage.setItem("darkMode", isDark ? "enabled" : "disabled");
 });
-
-console.log("JS actualizado.");
